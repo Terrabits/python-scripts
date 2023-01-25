@@ -2,5 +2,9 @@
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 cd "$ROOT_DIR"
 
-# test
-python -m unittest
+
+# release
+scripts/test
+scripts/clean
+scripts/build-package
+scripts/dist-package
